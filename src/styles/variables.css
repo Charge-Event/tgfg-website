@@ -1,0 +1,48 @@
+:root {
+  /* ---- Color: Deccan luxury palette ---- */
+  --ink: #1c1a17;          /* base dark, warm near-black */
+  --ink-soft: #262320;      /* slightly lifted dark surface */
+  --bottle: #1f3d2b;        /* Deccan bottle-green, primary accent */
+  --bottle-light: #2c5a3e;
+  --brass: #b08d45;         /* aged brass/gold, borrowed from zari & jewelry */
+  --brass-light: #d4b876;
+  --oxblood: #6b1f24;       /* occasion accent, CTAs */
+  --oxblood-light: #8a2b31;
+  --pearl: #f1e8d9;         /* warm ivory, light section bg */
+  --pearl-dim: #e6dac6;
+  --stone: #8a8578;         /* muted body text on light */
+  --stone-dark: #5b574c;
+
+  /* ---- Type ---- */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Work Sans', -apple-system, sans-serif;
+  --font-caption: 'Work Sans', sans-serif;
+
+  --step-caption: 0.75rem;
+  --step-body: 1rem;
+  --step-lg: 1.25rem;
+  --step-h3: 1.75rem;
+  --step-h2: 2.5rem;
+  --step-h1: clamp(2.75rem, 6vw, 4.5rem);
+
+  /* ---- Spacing ---- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 7rem;
+
+  --max-width: 1180px;
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

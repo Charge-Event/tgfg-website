@@ -1,0 +1,42 @@
+@import './ListPage.css';
+
+.gallery-filters {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.gallery-filter {
+  background: none;
+  border: 1px solid var(--pearl-dim);
+  padding: 0.5rem 1.1rem;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  color: var(--stone-dark);
+  transition: all 0.3s var(--ease);
+}
+
+.gallery-filter--active,
+.gallery-filter:hover {
+  border-color: var(--bottle);
+  color: var(--bottle);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}

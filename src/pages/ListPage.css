@@ -1,0 +1,76 @@
+.page-hero {
+  background: var(--ink);
+  color: var(--pearl);
+  padding: calc(var(--space-xl) + 3rem) 0 var(--space-lg);
+}
+
+.page-hero h1 {
+  font-size: var(--step-h1);
+  margin-top: 0.8rem;
+}
+
+.page-hero p {
+  margin-top: 1.2rem;
+  max-width: 520px;
+  color: var(--pearl-dim);
+  opacity: 0.85;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.grid-card {
+  border: 1px solid var(--pearl-dim);
+  padding: 2rem 1.6rem;
+  transition: border-color 0.35s var(--ease), transform 0.35s var(--ease);
+}
+
+.grid-card:hover {
+  border-color: var(--brass);
+  transform: translateY(-4px);
+}
+
+.grid-card__tag {
+  font-family: var(--font-display);
+  color: var(--brass);
+  font-size: 1.1rem;
+}
+
+.grid-card h3 {
+  margin-top: 0.8rem;
+  font-size: var(--step-h3);
+}
+
+.grid-card p {
+  margin-top: 0.8rem;
+  color: var(--stone-dark);
+  font-size: 0.92rem;
+}
+
+.cta {
+  background: var(--oxblood);
+  color: var(--pearl);
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: var(--step-h2);
+}
+
+.cta p {
+  margin-top: 1rem;
+  opacity: 0.85;
+}
+
+.cta .btn {
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .grid-cards {
+    grid-template-columns: 1fr;
+  }
+}
