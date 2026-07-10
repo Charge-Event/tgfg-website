@@ -15,15 +15,9 @@ export default function ArchFrame({ src, alt, ratio = '4 / 5', bordered = true, 
         <img src={src} alt={alt} loading="lazy" />
       ) : (
         <div className="arch-frame__placeholder">
-          <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
-            <path
-              d="M4 21V10a8 8 0 0 1 16 0v11"
-              stroke="currentColor"
-              strokeWidth="1.4"
-              strokeLinecap="round"
-            />
-          </svg>
-          {label && <span>{label}</span>}
+          <span className="arch-frame__monogram">TGFG</span>
+          <span className="arch-frame__rule" />
+          {label && <span className="arch-frame__label">{label}</span>}
         </div>
       )}
     </div>
